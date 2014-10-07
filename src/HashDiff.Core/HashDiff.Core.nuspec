@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>$id$</id>
+		<version>$version$</version>
+		<title>$id$</title>
+		<authors>$author$</authors>
+		<owners>$author$</owners>
+		<licenseUrl>https://github.com/leekelleher/HashDiff/blob/master/LICENSE</licenseUrl>
+		<projectUrl>https://github.com/leekelleher/HashDiff/</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<summary>HashDiff is a utility for comparing 2 sets of checksum hashes.</summary>
+		<description>
+			<![CDATA[HashDiff is a class-library utility for comparing 2 sets of checksum hashes.]]>
+		</description>
+		<copyright>Copyright &#169; 2014 Lee Kelleher</copyright>
+		<tags>hashdiff checksum hash md5 sha1 diff utility cli</tags>
+		<dependencies />
+	</metadata>
+	<files />
+</package>

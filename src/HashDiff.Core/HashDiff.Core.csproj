@@ -49,7 +49,9 @@
     <Compile Include="Output\BuilderFactory.cs" />
     <Compile Include="Output\HtmlBuilder.cs" />
     <Compile Include="Output\IBuilder.cs" />
+    <Compile Include="Output\JsonBuilder.cs" />
     <Compile Include="Output\TextBuilder.cs" />
+    <Compile Include="Output\XmlBuilder2.cs" />
     <Compile Include="Output\XmlBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

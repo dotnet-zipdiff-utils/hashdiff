@@ -102,4 +102,4 @@ Copyright &copy; 2014 Lee Kelleher, Umbrella Inc Ltd
 
 This project is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
-Please see [LICENSE](LICENSE) for further details.
+Please see [LICENSE](LICENSE.md) for further details.

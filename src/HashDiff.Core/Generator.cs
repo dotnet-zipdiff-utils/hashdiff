@@ -85,7 +85,7 @@
 	//
 	// TEMP POCO
 	//
-	public class Md5sum
+	internal class Md5sum
 	{
 		public Md5sum(string hash, string filepath)
 		{

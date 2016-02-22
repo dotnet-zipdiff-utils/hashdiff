@@ -11,15 +11,15 @@
 			Action<ICollection<string>, string> writeEntries = (keys, element) =>
 			{
 				var items = keys.Count > 0
-					? string.Concat("\r\n\t\t\"", string.Join("\",\r\n\t\t\"", keys), "\"\r\n\t")
+					? string.Concat("\r\n    \"", string.Join("\",\r\n    \"", keys), "\"\r\n  ")
 					: " ";
 
-				writer.Write("\t\"{0}\" : [{1}]", element, items);
+				writer.Write("  \"{0}\" : [{1}]", element, items);
 			};
 
 			writer.WriteLine("{");
-			writer.WriteLine("\t\"filename1\" : \"{0}\",", Path.GetFileName(diff.File1));
-			writer.WriteLine("\t\"filename2\" : \"{0}\",", Path.GetFileName(diff.File2));
+			writer.WriteLine("  \"filename1\" : \"{0}\",", Path.GetFileName(diff.File1));
+			writer.WriteLine("  \"filename2\" : \"{0}\",", Path.GetFileName(diff.File2));
 
 			writeEntries(diff.Added.Keys, "added");
 			writer.WriteLine(",");

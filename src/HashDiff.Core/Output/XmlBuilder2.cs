@@ -11,7 +11,7 @@
 		{
 			Action<string> writeEntry = x =>
 			{
-				writer.WriteLine("<file>{0}</file>", x);
+				writer.WriteLine("<{0}>{1}</{0}>", x.EndsWith("/") ? "directory" : "file", x);
 			};
 
 			Action<ICollection<string>, string> writeEntries = (keys, element) =>

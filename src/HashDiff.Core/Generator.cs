@@ -9,12 +9,16 @@
 
 	public class Generator
 	{
-		private string _rootpath;
 		private HashAlgorithm _algorithm;
-		private string[] _excludeDirectories;
-		private string[] _excludeFiles;
 
 		private string _emptyStringHash;
+
+		private string[] _excludeDirectories;
+
+		private string[] _excludeFiles;
+
+		private string _rootpath;
+
 		public string EmptyStringHash
 		{
 			get

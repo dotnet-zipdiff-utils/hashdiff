@@ -11,7 +11,8 @@
 	{
 		private string _rootpath;
 		private HashAlgorithm _algorithm;
-		private string[] _exclude;
+		private string[] _excludeDirectories;
+		private string[] _excludeFiles;
 
 		private string _emptyStringHash;
 		public string EmptyStringHash
@@ -28,11 +29,12 @@
 			}
 		}
 
-		public Generator(string path, HashAlgorithm algorithm, string[] exclude)
+		public Generator(string path, HashAlgorithm algorithm, string[] excludeDirectories, string[] excludeFiles)
 		{
 			_rootpath = path;
 			_algorithm = algorithm;
-			_exclude = exclude;
+			_excludeDirectories = excludeDirectories;
+			_excludeFiles = excludeFiles;
 		}
 
 		public string GenerateFileHashes()
@@ -40,10 +42,10 @@
 			var items = new List<string>();
 
 			var directories = Directory.GetDirectories(_rootpath, "*", SearchOption.AllDirectories)
-				.Where(x => !_exclude.Any(x.Contains));
+				.Where(x => !_excludeDirectories.Any(x.Contains));
 
 			var files = Directory.GetFiles(_rootpath, "*.*", SearchOption.AllDirectories)
-				.Where(x => !_exclude.Any(x.Contains));
+				.Where(x => !_excludeFiles.Any(x.Contains));
 
 			items.AddRange(directories);
 			items.AddRange(files);

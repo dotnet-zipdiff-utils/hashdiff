@@ -16,7 +16,7 @@
 		<VersionMajor>1</VersionMajor>
 		<VersionMinor>0</VersionMinor>
 		<VersionPatch>0</VersionPatch>
-		<VersionSuffix>-alpha</VersionSuffix>
+		<VersionSuffix></VersionSuffix>
 		<ProjectName>HashDiff</ProjectName>
 	</PropertyGroup>
 

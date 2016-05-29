@@ -32,8 +32,8 @@ If you prefer, you can compile HashDiff yourself, you'll need:
 
 To clone it locally click the "Clone in Windows" button above or run the following git commands.
 
-	git clone https://github.com/leekelleher/HashDiff.git HashDiff
-	cd HashDiff
+	git clone https://github.com/dotnet-zipdiff-utils/hashdiff.git hashdiff
+	cd hashdiff
 	.\build.cmd
 
 
@@ -84,7 +84,7 @@ To compare the differences between 2 sets of MD5 checksum hashes:
 
 Have a question?
 
-* [Raise an issue](https://github.com/leekelleher/HashDiff/issues) on GitHub
+* [Raise an issue](https://github.com/dotnet-zipdiff-utils/hashdiff/issues) on GitHub
 
 
 ## Contributing to this project
@@ -98,7 +98,7 @@ Anyone and everyone is welcome to contribute. Please take a moment to review the
 
 ## Copyright and License
 
-Copyright &copy; 2014 Lee Kelleher, Umbrella Inc Ltd
+Copyright &copy; 2016 Lee Kelleher, Umbrella Inc Ltd
 
 This project is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 

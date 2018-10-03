@@ -14,7 +14,7 @@
 		<description>
 			<![CDATA[HashDiff is a class-library utility for comparing 2 sets of checksum hashes.]]>
 		</description>
-		<copyright>Copyright &#169; 2016 Lee Kelleher</copyright>
+		<copyright>Copyright &#169; 2014 Lee Kelleher</copyright>
 		<tags>hashdiff checksum hash md5 sha1 diff utility</tags>
 		<dependencies />
 	</metadata>

@@ -12,6 +12,8 @@
 
 		static void Main(string[] args)
 		{
+			OutputLogo();
+
 			var options = new Options();
 			if (!CommandLine.Parser.Default.ParseArguments(args, options))
 			{
@@ -82,6 +84,18 @@
 		{
 			var builder = BuilderFactory.Create(filename);
 			builder.Build(filename, diff);
+		}
+
+		static void OutputLogo()
+		{
+			Console.WriteLine(@"
+  _    _           _     _____  _  __  __ 
+ | |  | |         | |   |  __ \(_)/ _|/ _|
+ | |__| | __ _ ___| |__ | |  | |_| |_| |_ 
+ |  __  |/ _` / __| '_ \| |  | | |  _|  _|
+ | |  | | (_| \__ \ | | | |__| | | | | |  
+ |_|  |_|\__,_|___/_| |_|_____/|_|_| |_|  
+");
 		}
 	}
 }

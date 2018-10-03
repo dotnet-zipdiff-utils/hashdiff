@@ -2,6 +2,8 @@
 
 <img align="right" src="docs/dotnet-hashdiff.png">
 
+[![NuGet release](https://img.shields.io/nuget/v/HashDiff.Core.svg)](https://www.nuget.org/packages/HashDiff.Core)
+
 Use the HashDiff tool when you need to compare the contents of two sets of checksum hashes.
 
 Run it as a standalone executable. The tool supports three output formats: plain text, XML and HTML.
